@@ -100,10 +100,42 @@ display: flex;
 align-items: center;
 gap: 5px;
 padding: 5px;
-border-radius: var(--color-1);
-color: var(--color-5);
+border-radius: 8px;
 border: 1px solid var(--color-3);
+color: var(--color-1);
+background: var(--color-5);
 }
 .nav_ul li a:hover{
+    filter: invert(1);
+}
+.footer{
+    position:fixed;
+    bottom: 10px;
+    width: 100%;
+    padding: var(--space-layout-padding-lr);
+}
+.footer_ul{
+    background: var(--color-4);
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+}
 
+.footer_ul li{
+    list-style: none;
+    background: var(--color-1);
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer_ul li a{
+    width: 24;
+    height: 24;
 }
