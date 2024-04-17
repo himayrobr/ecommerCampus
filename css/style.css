@@ -1,12 +1,12 @@
 @import url(variables.css);
-{
+*{
     padding: 0;
     margin: 0;
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
 .header {
-    background: red;
+    /* background: red; */
     padding: var(--space-layout-padding-lr);
     display: flex;
     flex-direction: row;
@@ -15,13 +15,13 @@
     height: 60px;
 }
 .header__information{
-    /* / background: green; / */
+    /* background: green; */
 }
-.headerinformation span{
+.header__information span{
     font-family: "EncodeSans-Bold";
 }
-.headerlogin{
-    /* / background: violet; / */
+.header__login{
+    /* background: violet; */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -29,43 +29,81 @@
 }
 .header__login img{
     width: 100%;
-
+    /* object-fit: contain; */
 }
-
 .nav{
-    background: red;
+    /* background: red; */
     padding: var(--space-layout-padding-lr);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
-
 .nav__search{
-    background: yellow;
+    /* background: yellow; */
     position: relative;
 }
-
 .nav__search input{
     outline: none;
     width: 260px;
     height: 45px;
-    border-radius: 10 px;
+    border-radius: 10px;
     padding-left: 2.5rem;
     padding-right: 1.5rem;
-    border: 1 px solid var(--color-3);
-    }
-
-.search_icon{
+    border: 1px solid var(--color-3);
+}
+.search__icon{
     position: absolute;
     display: block;
-    bottom: 6rem;
-    left: 8rem;
-    user-select
-
-}    
-.nav_filter{
+    bottom: .6rem;
+    left: .8rem;
+    user-select: none;
+    cursor: pointer;
+}
+.nav__filter{
     background: var(--color-1);
-    width: 40 px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+}
+.nav__filter img{
+    width: 20px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+.main{
+    padding: var(--space-layout-padding-lr);
+    margin-top: 15px;   
+}
+.main_nav{
 
-}    
+}
+.nav_ul{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10 px;
+    overflow-x: scroll ;
+}
+.nav_ul li{
+    list-style: none;
+}
+.nav_ul li a{
+width: 105px;
+height: 35px;
+font-family: "EncodeSans-Mediun";
+text_decoration:none;
+display: flex;
+align-items: center;
+gap: 5px;
+padding: 5px;
+border-radius: var(--color-1);
+color: var(--color-5);
+border: 1px solid var(--color-3);
+}
+.nav_ul li a:hover{
+
+}
