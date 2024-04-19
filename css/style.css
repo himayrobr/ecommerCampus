@@ -122,6 +122,7 @@
 .main__article{
     height: 70vh;
     margin-top: 15px;
+    padding-bottom: 12vh;
     /* background: red; */
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +157,7 @@
     height: var(--layout-imagen-height);
     object-fit: cover;
 }
-.section__front_page img:last-child{
+.section__front_page > img:last-child{
     top: 10px;
     right: 10px;
     background: var(--color-1);
@@ -221,6 +222,7 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 40px;
+    box-shadow: 0px 0px 55px 10px #fff;
 }
 .footer__ul li{
     list-style: none;
@@ -236,8 +238,6 @@
     display: flex;
 }
 .footer__ul li a img{
-    width: 25px;
-    height: 25px;
     object-fit: contain;
     
 }
