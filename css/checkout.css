@@ -5,3 +5,50 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
+
+.header {
+    background: red;
+    padding:  var(--space-layout-padding-lr);
+}
+.header__nav {
+    background: violet;
+}
+.header__nav div:nth-child(2){
+    font-family: "EncodeSans-SemiBold";
+}
+.main{
+    padding: var(--space-layout-padding-lr);
+}
+.checkout__details{
+    
+}
+.details__product{
+    /* background: green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom-width:1px ;
+    border-bottom-style: solid ;
+    border-bottom-color:var(--color) ;
+}
+.product__imagen{
+    /* background: maroon; */
+    width: var(--layout-imagen-width-checkout);
+    height: var(--layout-imagen-height-checkout);
+}
+.product__image img{
+    width: var(--layout-imagen-width-checkout);
+    height: var(--layout-imagen-height-checkout);
+    border-radius: 15px;
+    object-fit: cover;;
+}
+.product_description{
+position: relative;
+display: flex;
+flex-direction: column;
+width: 50%;
+}  
+.product_description h3{
+
+}  
