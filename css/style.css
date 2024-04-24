@@ -5,6 +5,10 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
+body{
+    background: #000228;
+}
+
 .header {
     /* background: red; */
     padding: var(--space-layout-padding-lr);
@@ -14,12 +18,20 @@
     align-items: center;
     height: 60px;
 }
-.header__information{
-    /* background: green; */
+.header__information{;
+   
+    width: 80px;
+    height: 80px;
+    
+    
+}
+/* .header__information p{
+    color: #ed1c24;
 }
 .header__information span{
     font-family: "EncodeSans-Bold";
-}
+    color: #5e20f9;
+} */
 .header__login{
     /* background: violet; */
     width: 40px;
