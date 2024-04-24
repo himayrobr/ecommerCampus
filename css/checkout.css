@@ -5,6 +5,9 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
+body{
+    background: #000228;
+}
 .header {
     /* background: red; */
     /* padding: var(--space-layout-padding-lr); */
